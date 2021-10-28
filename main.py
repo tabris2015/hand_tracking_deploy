@@ -84,7 +84,7 @@ def main():
         print("No se puede abrir webcam")
 
 
-    with mp_hands.Hands() as hands:
+    with mp_hands.Hands(static_image_mode=False) as hands:
         while True:
             start_time = time.time() 
             # lectura de un frame
